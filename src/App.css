@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top, #0f0f0f, #1a1a1a);
+  color: #ffffff;
+}
+
+.app-container {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 2rem;
+}
+
+.custom-inputs {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.custom-inputs input {
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #00ffff;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+.timer-display {
+  background: rgba(0, 255, 255, 0.1);
+  border: 22px solid #00ffff44;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 20px;
+  width: fit-content;
+  box-shadow: 0 0 250px #d80c4c88;
+  font-size: 2rem;
+}
+
+.break-mode {
+  border-color: #ff4081;
+  box-shadow: 0 0 20px #ff408188;
+}
+
+.controls {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #111;
+  color: #00ffff;
+  box-shadow: 0 0 10px #00ffff88;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffffaa;
+}
+
+.pause {
+  color: #ffcc00;
+}
+
+.resume {
+  color: #4caf50;
+}
+
+.restart {
+  color: #ff4081;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-box {
+  background: #222;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px #ff4081aa;
+}
+
+.dialog-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dialog-actions button {
+  background: transparent;
+  border: 1px solid #00ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #00ffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dialog-actions button:hover {
+  background: #00ffff;
+  color: #000;
+}
